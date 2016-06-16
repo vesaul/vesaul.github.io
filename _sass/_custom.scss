@@ -1,0 +1,167 @@
+
+// @import 'base.css';
+ 
+/* Create a gray outline on left and bottom border of each blog post */
+article.post {
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-bottom-left-radius: 8px; 
+  margin-bottom: $spacing-unit / 2;
+}
+
+div.post_with_bg_img {
+  background-image: url(/images/IMG_0188_1kx1k_sepia.png);
+  position: relative;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+
+
+article {
+    margin: 10 40 10;
+    
+    margin-left: 2em;
+    background-color: hsla(0,0%,0%,0.31);
+    border-radius: 6px;
+    color: snow;
+    font-weight:900;
+    h2 {
+      color: snow;
+    }
+  }
+}
+
+section .row article {
+  margin-top: 1em;
+}
+
+main .container section header h1 {
+  margin-top: 1em;
+}
+
+main article {
+//   margin-top: 1em;
+  h1  {
+    font-weight: bold;
+    color: $brand-color_2;
+//     padding-right: 50px;
+    time, >span {
+      float: right;
+      font-size: medium;
+      font-weight: 500;
+      color: #888;
+      margin-right: 1em;  
+      /* XXX FIXME can't figure out how to align to baseline; hack: */
+      position: relative;
+      bottom: -0.75em;
+      letter-spacing: normal;
+    }
+    > span {
+      clear: both;
+      color: gray;
+      
+      bottom: -0.5em;
+    }
+  }
+  
+  address, table, table + p {
+  font-style: normal;
+    > a {
+      font-weight: bold;
+    }
+    font-size: large;
+  }
+
+  h2 {
+    font-size: large;
+    font-weight: bold;
+    color: $brand-color_2;
+  }
+
+}
+
+.stats {
+  display: inline-block;
+  font-size: smaller;
+  margin-left: 1em;
+  color: $grey-color;
+//   border: 1px solid #96aa0e;
+}
+
+.logo h3 {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+  position: relative;
+  color: rgba(9,7,8,1.00);
+  text-transform: uppercase;
+  font-size: 100%;
+  left: 0%;
+  float: left;
+  top: 83%;
+  padding-top: 4px;
+  > a {
+    color: #FEFEFE;
+    font-weight: normal;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Helvetica, Arial, sans-serif;
+    font-size: x-large;
+    
+    &:visited  {
+      font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+    }
+  }
+}
+
+ul li {
+  list-style-type: none;
+  list-style-image: none;
+  strong {
+//   color: rgba(4,90,122,1.00);
+  color: $brand-color_2;
+  font-size: medium;
+  }
+}
+
+
+/* */
+#avoinna24 {
+  width: 100%;
+/*  visibility: hidden; */
+}
+
+#fbblock {
+  font-size: smaller;
+  font-family: "Calibri";
+  font-weight: 400;
+  color: #3b5998;
+  border-radius: 6px;
+  h2 {
+//     margin-top: 1.5em;
+    color: $brand-color_2;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  p {
+    color: $text-color;
+    font-size: medium;
+  }
+}
+
+#fb-page {
+  font-family: "Calibri";
+  font-weight: bold;
+  color: #3b5998;
+  border-radius: 6px;
+}
+
+.gmap {
+//   float: left;
+//   width: 80%;
+  margin-top: 1em;
+}
+
+
+.ui-widget-overlay { position: absolute; top: 100px; left: 0; width: 100%; height: 100%; }
