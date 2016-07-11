@@ -40,7 +40,7 @@
 
 			// Set up nav items.
 				$nav_a
-					.scrolly({ offset: 44 })
+					.scrolly({ offset: 11 })
 					.on('click', function(event) {
 
 						var $this = $(this),
