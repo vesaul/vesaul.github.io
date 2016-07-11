@@ -16,8 +16,8 @@ end
 desc "Watch the site and regenerate when it changes"
 task :watch do
   puts "Starting to watch source with Jekyll and Compass."
-  system "compass compile" unless File.exist?("css/main.css")
-  system "jekyll build"
+  #system "compass compile" unless File.exist?("assets/css/main.css")
+  #system "jekyll build"
   jekyllPid = Process.spawn("jekyll serve --watch")
   compassPid = Process.spawn("compass watch")
 
