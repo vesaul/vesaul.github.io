@@ -1,3 +1,7 @@
+---
+title: ptvesaulvi
+---
+
 <!DOCTYPE HTML>
 <!--
 	Read Only by HTML5 UP
@@ -24,7 +28,6 @@
       </script>
 	</head>
 	<body>
-
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -72,17 +75,16 @@
   										<strong>suurempi</strong> voimataso ja kestävyys,
   										<strong>hyvä</strong> ja <strong>energinen</strong> olo
 										  tai vaikka nämä kaikki yhdessä?
-										</p>
-                    
+										</p>  
 									</header>
 									<div class="row uniform">
-  									  <div class="4u"></div>
-											<div class="6u">
-												<ul class="actions">
-													<li><a href="#two" class="button big scrolly">Kyllä, kerro lisää!</a></li>
-												</ul>
-											</div>
+  									<div class="4u"></div>
+										<div class="6u">
+											<ul class="actions">
+												<li><a href="#two" class="button big scrolly">Kyllä, kerro lisää!</a></li>
+											</ul>
 										</div>
+								  </div>
 								</div>
 							</section>
 
@@ -177,6 +179,23 @@ Pakettiin kuuluu tietenkin sähköposti- ja puhelintuki.</p>
                   </p>  
                   <p>Urheilua olen harrastanut lähes koko ikäni, nuorempana joukkuelajeista erityisesti jääkiekkoa ja jalkapalloa, aikuisena myös kaukalopalloa.    Yksilölajivalikoimani on vaihdellut sulkapallosta juoksun kautta voimaharjoitteluun ja erityisesti esterata- ja muut elämykselliset juoksutapahtumat ovat sydäntäni lähellä. Voimaharjoittelu, cross training ja painonnosto kuuluvat viikko-ohjelmaani päivittäin joko ohjaamisen tai oman harjoittelun kautta. 
                   </p>
+								</div>
+								<div class="container">
+								  {% capture postURL %}{{ page.url | remove:'.html' }}{% endcapture %}
+                  {% capture postURLAbs %}{{ site.url }}{{ postURL }}{% endcapture %}
+                  {% capture postURLAbsEsc %}{{ postURLAbs | escape }}{% endcapture %}
+									<div id="comments" class="fb-comments" data-num-posts="50" data-width="700" data-href="{{ postURLAbsEsc }}"></div>
+                  <p>Page url: {{postURLAbsEsc}}</p>
+                  <!-- Facebook SDK: -->
+                  <div id="fb-root"></div>
+                  <script>(function(d){
+                    var js, id = 'facebook-jssdk'; 
+                    if (d.getElementById(id)) {return;}
+                    js = d.createElement('script'); js.id = id; js.async = true;
+                    js.src = "//connect.facebook.net/en_US/all.js#appId=786500764737722&xfbml=1";
+                    d.getElementsByTagName('head')[0].appendChild(js);
+                    }(document));
+                  </script>
 								</div>
               </section>
                             
@@ -562,9 +581,8 @@ Pakettiin kuuluu tietenkin sähköposti- ja puhelintuki.</p>
 								</div>
 							</section>
 						
--->
-
-					</div>
+-->     
+        </div> <!-- main -->
 
 				<!-- Footer -->
 					<section id="footer">
@@ -575,7 +593,7 @@ Pakettiin kuuluu tietenkin sähköposti- ja puhelintuki.</p>
 						</div>
 					</section>
 
-			</div>
+			</div> <!-- wrapper -->
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
