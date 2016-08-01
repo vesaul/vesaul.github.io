@@ -185,9 +185,7 @@ Pakettiin kuuluu tietenkin sähköposti- ja puhelintuki.</p>
                   {% capture postURLAbs %}{{ site.url }}{{ postURL }}{% endcapture %}
                   {% capture postURLAbsEsc %}{{ postURLAbs | escape }}{% endcapture %}
 									<div id="comments" class="fb-comments" data-num-posts="50" data-width="700" data-href="{{ postURLAbsEsc }}"></div>
-                  <p>Page url: {{postURL}}</p>
-                  <p>Site url: {{site.url}}</p>
-                  <p>postURLAbsEsc url: {{postURLAbsEsc}}</p>
+                  <p>Page url: {{postURLAbsEsc}}</p>
                   <!-- Facebook SDK: -->
                   <div id="fb-root"></div>
                   <script>(function(d){
