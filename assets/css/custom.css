@@ -1,0 +1,18 @@
+/* line 1, ../sass/custom.scss */
+div#comments {
+  clear: both;
+  margin: 0 0;
+  /* TODO min-height for an accurate layout sooner? */
+}
+
+/* for Facebook comments, override/customize styles as needed: */
+/* line 8, ../sass/custom.scss */
+div.fb-comments {
+  display: block;
+}
+
+/* line 11, ../sass/custom.scss */
+div.fb-comments span,
+div.fb-comments iframe {
+  width: 100% !important;
+}
