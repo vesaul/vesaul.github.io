@@ -16,3 +16,20 @@ div.fb-comments span,
 div.fb-comments iframe {
   width: 100% !important;
 }
+
+/* line 18, ../sass/custom.scss */
+#header > header h1#logo {
+  font-size: medium;
+}
+/* line 20, ../sass/custom.scss */
+#header > header h1#logo > a {
+  font-size: x-large;
+}
+/* line 23, ../sass/custom.scss */
+#header > header h1#logo hr {
+  content: "";
+  padding: 0.3 em;
+  margin: 0.2em;
+  border: 1px solid transparent;
+  height: 0px;
+}

@@ -12,3 +12,20 @@ div.fb-comments span,
 div.fb-comments iframe {
     width: 100% !important;
 }
+
+#header > header h1 {
+  
+  &#logo {
+    font-size: medium;
+    > a {
+      font-size: x-large;
+    }
+    hr {
+      content: "";
+      padding: 0.3em;
+      margin: 0.2em;
+      border: 1px solid transparent;
+    height: 0px;
+    }
+  }
+}
