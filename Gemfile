@@ -6,4 +6,5 @@ source 'https://rubygems.org'
    gem "kramdown"
    gem "compass"
    gem "rake"
+   gem "github-pages"
  end
